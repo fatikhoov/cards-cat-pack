@@ -1,0 +1,208 @@
+:root
+    --white-color: #f2f2f2
+    --silver-color:#666666
+    --main-color: #1698d9
+    --main-hover-color: #2EA8E6
+    --active-color: #D91667
+    --active-hover-color: #E52E7A
+    --disabled-color: #B3B3B3
+    
+
+
+.wrapper__cards_body 
+    .wrapper__cards_body-items
+        flex-direction: row
+        flex-wrap: wrap
+        gap: 80px
+        .wrapper__cards_body-item 
+            width: 320px
+            height: 509px
+            border-radius: 12px 
+            align-items: center
+            justify-content: space-between 
+            position: relative
+            .indexCard
+                position: absolute 
+                top: 0
+                left: 0
+                right: 0
+                bottom: 32px
+                z-index: 1
+            .item__top_header
+                flex-direction: row
+                width: 100%
+                justify-content: flex-start
+                .corner
+                    width: 43px
+                    height: 43px 
+                    background: linear-gradient(-45deg,var(--white-color),var(--white-color) 28px,var(--main-color), var(--main-color) 32px,transparent 0)
+                .item__top_texts-pretitle 
+                    padding: 15px 0 0 8px
+                    background: var(--white-color)
+                    border: 4px solid var(--main-color)
+                    border-bottom: none
+                    border-left: none
+                    border-radius: 0 12px 0 0
+                    flex-grow: 1
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 19px
+                    color: var(--silver-color)
+            .item__top
+                background: var(--white-color)
+                border: 4px solid var(--main-color)
+                border-top: none
+                border-radius: 0 0 12px 12px
+                width: -webkit-fill-available
+                height: inherit
+                min-height: 430px
+                background-image: url("../img/Photo.png")
+                background-repeat: no-repeat
+                background-position: bottom -88px center
+                align-items: center
+                justify-content: space-between
+                position: relative 
+                .item__top_texts 
+                    gap: 15px
+                    .item__top_texts-title
+                        font-weight: 700
+                        font-size: 24px
+                        line-height: 28px
+                        color: #000000
+                        .title-card 
+                            font-size: 48px
+                            line-height: 56px 
+                    .item__top_texts-count
+                        font-style: normal
+                        font-weight: 700
+                        font-size: 14px
+                        line-height: 16px
+                        color: var(--silver-color)
+                .item__top_description 
+                    width: 80px
+                    height: 80px
+                    background: var(--main-color)
+                    border-radius: 100%
+                    align-items: center
+                    align-self: end
+                    right: 16px
+                    bottom: 16px
+                    position: relative 
+                    .item__top_description-weight
+                        font-weight: 400
+                        font-size: 42px
+                        align-items: center
+                        flex-direction: column 
+                        justify-content: center 
+                        color: #FFFFFF 
+                    span 
+                        font-size: 21px
+                        line-height: 22px
+            .item__bottom
+                height: 29px 
+                width: 100%
+                margin-top: 14px
+                color: white 
+                font-style: normal
+                font-weight: 400
+                font-size: 13px
+                line-height: 15px
+                text-align: center        
+                flex-direction: row
+                a
+                    color: var(--main-color)                  
+                    text-decoration: none 
+                    border-bottom: 1px dashed var(--main-color)
+                    &:hover
+                        border-bottom: none
+
+ 
+
+.wrapper__cards_body-item:hover 
+    cursor: pointer 
+    .item__top_header
+        .corner
+            background: linear-gradient(-45deg,var(--white-color),var(--white-color) 28px,var(--main-hover-color) 0,var(--main-hover-color) 32px,transparent 0) !important    
+        .item__top_texts-pretitle 
+            border-top: 4px solid var(--main-hover-color)!important
+            border-right: 4px solid var(--main-hover-color) !important
+    .item__top
+        border: 4px solid var(--main-hover-color) !important
+        border-top: none !important
+        .item__top_description 
+            background: var(--main-hover-color) !important
+    .item__bottom
+        a
+            color: var(--main-hover-color) !important
+
+.active-cards  
+    cursor: pointer
+    .item__top_header
+        .corner
+            background: linear-gradient(-45deg,var(--white-color),var(--white-color) 28px,var(--active-color) 0,var(--active-color) 32px,transparent 0) !important
+        .item__top_texts-pretitle 
+            border-top: 4px solid var(--active-color) !important
+            border-right: 4px solid var(--active-color) !important
+    .item__top
+        border: 4px solid var(--active-color) !important
+        border-top: none !important
+        .item__top_description 
+            background: var(--active-color) !important
+    .item__bottom
+        a
+            color: var(--active-color) !important
+
+.active-cards:hover  
+    cursor: pointer
+    .item__top_header
+        .corner
+            background: linear-gradient(-45deg,var(--white-color),var(--white-color) 28px,var(--active-hover-color) 0,var(--active-hover-color) 32px,transparent 0) !important
+        .item__top_texts-pretitle 
+            border-top: 4px solid var(--active-hover-color) !important
+            border-right: 4px solid var(--active-hover-color) !important
+    .item__top
+        border: 4px solid var(--active-hover-color) !important
+        border-top: none !important
+        .item__top_description 
+            background: var(--active-hover-color) !important
+    .item__bottom
+        a
+            color: var(--active-hover-color) !important
+
+.disabled  
+    cursor: pointer
+    .item__top_header
+        .corner
+            background: linear-gradient(-45deg,var(--white-color),var(--white-color) 28px,var(--disabled-color) 0,var(--disabled-color) 32px,transparent 0) !important
+        .item__top_texts-pretitle 
+            border-top: 4px solid var(--disabled-color) !important
+            border-right: 4px solid var(--disabled-color) !important
+            color: rgb(179,179,179,0.5) !important 
+    .item__top
+        border: 4px solid var(--disabled-color) !important
+        border-top: none !important 
+        background-image: url("../img/photo-disabled.png") !important
+        .item__top_texts
+            .item__top_texts-title 
+                color: rgb(179,179,179,0.5) !important 
+            .item__top_texts-count
+                display: none
+        .item__top_description 
+            background: var(--disabled-color) !important
+    .item__bottom
+        color: #FFFF66 !important
+         
+
+.disabled:hover   
+    .item__top_header
+        .corner
+            background: linear-gradient(-45deg,var(--white-color),var(--white-color) 28px,var(--disabled-color) 0,var(--disabled-color) 32px,transparent 0) !important
+        .item__top_texts-pretitle 
+            border-top: 4px solid var(--disabled-color) !important
+            border-right: 4px solid var(--disabled-color) !important
+    .item__top
+        border: 4px solid var(--disabled-color) !important
+        border-top: none !important
+        .item__top_description 
+            background: var(--disabled-color) !important
+     

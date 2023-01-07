@@ -1,5 +1,4 @@
-.vscode/
 .firebase/
-dev
+.vscode/
+dev/
 node_modules/
-.firebaserc
